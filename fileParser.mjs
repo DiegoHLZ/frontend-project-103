@@ -1,9 +1,17 @@
 import fs from 'fs';
 import path from 'path';
+import yaml from 'js-yaml';
 
-// Función para cargar y parsear el contenido del archivo JSON
 export function parseFile(filepath) {
-  const fullPath = path.resolve(filepath); // Obtener la ruta absoluta
-  const fileData = fs.readFileSync(fullPath, 'utf8'); // Leer el contenido del archivo
-  return JSON.parse(fileData); // Convertir JSON a objeto
+  const fullPath = path.resolve(filepath);
+  const fileData = fs.readFileSync(fullPath, 'utf8');
+
+  const ext = path.extname(fullPath);
+  if (ext === '.json') {
+    return JSON.parse(fileData);
+  } else if (ext === '.yml' || ext === '.yaml') {
+    return yaml.load(fileData);
+  } else {
+    throw new Error(`Unsupported file format: ${ext}`);
+  }
 }

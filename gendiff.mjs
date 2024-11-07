@@ -3,7 +3,7 @@
 import path from 'path';
 import { Command } from 'commander';
 import _ from 'lodash';
-import { parseFile } from './fileParser.mjs';
+import parseFile from './parsers.js';
 import { fileURLToPath } from 'url';
 
 const program = new Command();

@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1730946983507" clover="3.2.0">
-  <project timestamp="1730946983507" name="All files">
-    <metrics statements="23" coveredstatements="17" conditionals="10" coveredconditionals="9" methods="4" coveredmethods="3" elements="37" coveredelements="29" complexity="0" loc="23" ncloc="23" packages="1" files="2" classes="2"/>
+<coverage generated="1730951340873" clover="3.2.0">
+  <project timestamp="1730951340873" name="All files">
+    <metrics statements="36" coveredstatements="22" conditionals="22" coveredconditionals="13" methods="5" coveredmethods="3" elements="63" coveredelements="38" complexity="0" loc="36" ncloc="36" packages="1" files="3" classes="3"/>
     <file name="fileParser.mjs" path="/Users/diego/Desktop/codica/frontend-project-103/fileParser.mjs">
-      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="6" count="2" type="stmt"/>
-      <line num="7" count="2" type="stmt"/>
-      <line num="8" count="2" type="stmt"/>
+      <metrics statements="8" coveredstatements="7" conditionals="6" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <line num="6" count="4" type="stmt"/>
+      <line num="7" count="4" type="stmt"/>
+      <line num="9" count="4" type="stmt"/>
+      <line num="10" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="11" count="2" type="stmt"/>
+      <line num="12" count="2" type="cond" truecount="2" falsecount="2"/>
+      <line num="13" count="2" type="stmt"/>
+      <line num="15" count="0" type="stmt"/>
     </file>
     <file name="gendiff.mjs" path="/Users/diego/Desktop/codica/frontend-project-103/gendiff.mjs">
       <metrics statements="20" coveredstatements="14" conditionals="10" coveredconditionals="9" methods="3" coveredmethods="2"/>
@@ -19,17 +24,28 @@
       <line num="23" count="0" type="stmt"/>
       <line num="26" count="1" type="cond" truecount="1" falsecount="1"/>
       <line num="27" count="0" type="stmt"/>
-      <line num="32" count="1" type="stmt"/>
-      <line num="33" count="1" type="stmt"/>
-      <line num="35" count="1" type="stmt"/>
-      <line num="36" count="5" type="cond" truecount="4" falsecount="0"/>
-      <line num="37" count="2" type="cond" truecount="2" falsecount="0"/>
-      <line num="38" count="1" type="stmt"/>
-      <line num="40" count="1" type="stmt"/>
-      <line num="43" count="3" type="cond" truecount="2" falsecount="0"/>
-      <line num="44" count="2" type="stmt"/>
-      <line num="46" count="1" type="stmt"/>
-      <line num="49" count="1" type="stmt"/>
+      <line num="32" count="2" type="stmt"/>
+      <line num="33" count="2" type="stmt"/>
+      <line num="35" count="2" type="stmt"/>
+      <line num="36" count="10" type="cond" truecount="4" falsecount="0"/>
+      <line num="37" count="4" type="cond" truecount="2" falsecount="0"/>
+      <line num="38" count="2" type="stmt"/>
+      <line num="40" count="2" type="stmt"/>
+      <line num="43" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="44" count="4" type="stmt"/>
+      <line num="46" count="2" type="stmt"/>
+      <line num="49" count="2" type="stmt"/>
+    </file>
+    <file name="parsers.js" path="/Users/diego/Desktop/codica/frontend-project-103/parsers.js">
+      <metrics statements="8" coveredstatements="1" conditionals="6" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <line num="6" count="1" type="stmt"/>
+      <line num="7" count="0" type="stmt"/>
+      <line num="8" count="0" type="stmt"/>
+      <line num="10" count="0" type="cond" truecount="0" falsecount="4"/>
+      <line num="11" count="0" type="stmt"/>
+      <line num="12" count="0" type="cond" truecount="0" falsecount="2"/>
+      <line num="13" count="0" type="stmt"/>
+      <line num="16" count="0" type="stmt"/>
     </file>
   </project>
 </coverage>
