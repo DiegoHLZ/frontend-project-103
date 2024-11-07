@@ -1,0 +1,38 @@
+{
+  "name": "@codica/code",
+  "version": "1.0.0",
+  "description": "CLI tool to compare configuration files and show differences",
+  "main": "gendiff.mjs",
+  "bin": {
+    "gendiff": "./gendiff.mjs"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --coverage",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DiegoHLZ/frontend-project-103.git"
+  },
+  "keywords": [
+    "CLI",
+    "compare",
+    "configuration",
+    "files",
+    "differences"
+  ],
+  "author": "Diego Huincho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DiegoHLZ/frontend-project-103/issues"
+  },
+  "homepage": "https://github.com/DiegoHLZ/frontend-project-103#readme",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
