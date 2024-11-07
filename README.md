@@ -35,7 +35,8 @@ Gendiff es una herramienta CLI que compara dos archivos de configuración y mues
 
 Puedes ejecutar la herramienta con el siguiente comando:
 ```bash
-node gendiff.mjs __fixtures__/file1.yml __fixtures__/file2.yml
+node gendiff.mjs __fixtures__/file1.yml __fixtures__/file2.yml 
+```
 
 ## Ejemplo en video
 
