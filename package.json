@@ -33,6 +33,7 @@
     "lodash": "^4.17.21"
   },
   "devDependencies": {
+    "eslint": "^9.14.0",
     "jest": "^29.7.0"
   }
 }
