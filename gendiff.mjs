@@ -13,13 +13,11 @@ export function genDiff(file1Path, file2Path, format = 'stylish') {
     const file1 = parseFile(file1Path);
     const file2 = parseFile(file2Path);
 
-    // Construye un objeto raíz con una lista de hijos
     const diff = {
       type: 'root',
       children: buildDiff(file1, file2),
     };
 
-    // Valida que diff.children sea un array válido
     if (!Array.isArray(diff.children)) {
       throw new Error('Failed to generate diff: Invalid diff structure');
     }
@@ -30,7 +28,6 @@ export function genDiff(file1Path, file2Path, format = 'stylish') {
   }
 }
 
-// Configuración de la línea de comandos
 const program = new Command();
 
 program
@@ -43,18 +40,17 @@ Example:
   gendiff --format stylish file1.yml file2.yml
   `)
   .arguments('<file1> <file2>')
-  .option('-f, --format <type>', 'output format', 'stylish') // Default: 'stylish'
+  .option('-f, --format <type>', 'output format', 'stylish')
   .action((file1Path, file2Path, options) => {
     try {
       const fullPath1 = path.resolve(file1Path);
       const fullPath2 = path.resolve(file2Path);
 
-      // Genera el diff y lo muestra en consola
       const diff = genDiff(fullPath1, fullPath2, options.format);
       console.log(diff);
     } catch (error) {
       console.error(`Error: ${error.message}`);
-      process.exit(1); // Sale con un código de error
+      process.exit(1);
     }
   });
 

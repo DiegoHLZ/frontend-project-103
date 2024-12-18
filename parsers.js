@@ -1,22 +1,21 @@
 import fs from 'fs';
 import path from 'path';
 import yaml from 'js-yaml';
-import _ from 'lodash';
 
 const parseFile = (filePath) => {
   const ext = path.extname(filePath);
-  const content = fs.readFileSync(filePath, 'utf-8').trim(); // Eliminar espacios extra
+  const content = fs.readFileSync(filePath, 'utf-8').trim();
   
   if (!content) {
-    return {}; // Retorna un objeto vacío si el archivo está vacío
+    return {};
   }
 
   if (ext === '.yml' || ext === '.yaml') {
-    return yaml.load(content) || {}; // Devuelve {} si YAML es nulo
+    return yaml.load(content) || {};
   } else if (ext === '.json') {
     try {
       return JSON.parse(content);
-    } catch (error) {
+    } catch {
       throw new Error(`Failed to parse file: ${filePath}. Invalid JSON format.`);
     }
   }

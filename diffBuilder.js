@@ -1,4 +1,4 @@
-import _ from 'lodash'; // Importa lodash para utilizar funciones utilitarias
+import _ from 'lodash';
 
 const ADD_VALUE = 'added';
 const REMOVED_VALUE = 'removed';
@@ -14,7 +14,7 @@ function buildDiff(dataFile1, dataFile2) {
   const keys = _.sortBy(_.union(Object.keys(dataFile1), Object.keys(dataFile2)));
 
   if (keys.length === 0) {
-    return []; // Devuelve una lista vacía si no hay claves
+    return [];
   }
 
   return keys.map((key) => {

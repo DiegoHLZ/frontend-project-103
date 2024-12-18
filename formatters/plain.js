@@ -31,14 +31,14 @@ const formatPlain = (diff, parentPath = '') => {
         case 'changed':
           return `Property '${propertyPath}' was updated. From ${formatValue(node.oldValue)} to ${formatValue(node.newValue)}`;
         case 'nested':
-          return formatPlain(node.children, propertyPath); // Recursión
+          return formatPlain(node.children, propertyPath);
         case 'unchanged':
-          return null; // Ignora sin cambios
+          return null;
         default:
           throw new Error(`Unknown node type: ${node.type}`);
       }
     })
-    .filter(Boolean); // Elimina valores nulos
+    .filter(Boolean);
 
   return lines.join('\n');
 };
