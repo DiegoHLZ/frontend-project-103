@@ -1,66 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1731341012960" clover="3.2.0">
-  <project timestamp="1731341012960" name="All files">
-    <metrics statements="54" coveredstatements="47" conditionals="30" coveredconditionals="26" methods="10" coveredmethods="9" elements="94" coveredelements="82" complexity="0" loc="54" ncloc="54" packages="1" files="2" classes="2"/>
-    <file name="gendiff.mjs" path="/Users/diego/Desktop/codica/frontend-project-103/gendiff.mjs">
-      <metrics statements="46" coveredstatements="40" conditionals="24" coveredconditionals="21" methods="9" coveredmethods="8"/>
-      <line num="11" count="12" type="stmt"/>
-      <line num="13" count="12" type="stmt"/>
-      <line num="14" count="46" type="cond" truecount="2" falsecount="0"/>
-      <line num="15" count="12" type="stmt"/>
-      <line num="17" count="34" type="cond" truecount="2" falsecount="0"/>
-      <line num="18" count="8" type="stmt"/>
-      <line num="20" count="26" type="stmt"/>
-      <line num="21" count="26" type="stmt"/>
-      <line num="22" count="26" type="cond" truecount="4" falsecount="0"/>
-      <line num="23" count="8" type="stmt"/>
-      <line num="25" count="18" type="cond" truecount="2" falsecount="0"/>
-      <line num="26" count="10" type="stmt"/>
-      <line num="28" count="8" type="stmt"/>
-      <line num="34" count="92" type="stmt"/>
-      <line num="35" count="12" type="stmt"/>
-      <line num="36" count="46" type="stmt"/>
-      <line num="37" count="46" type="stmt"/>
-      <line num="38" count="46" type="stmt"/>
-      <line num="40" count="46" type="cond" truecount="5" falsecount="1"/>
-      <line num="42" count="12" type="stmt"/>
-      <line num="44" count="8" type="stmt"/>
-      <line num="46" count="8" type="stmt"/>
-      <line num="48" count="10" type="stmt"/>
-      <line num="53" count="8" type="stmt"/>
-      <line num="55" count="0" type="stmt"/>
-      <line num="58" count="12" type="stmt"/>
-      <line num="63" count="67" type="cond" truecount="2" falsecount="0"/>
-      <line num="64" count="52" type="stmt"/>
-      <line num="66" count="15" type="stmt"/>
-      <line num="67" count="15" type="stmt"/>
-      <line num="68" count="15" type="stmt"/>
-      <line num="69" count="19" type="stmt"/>
-      <line num="71" count="15" type="stmt"/>
-      <line num="76" count="4" type="stmt"/>
-      <line num="77" count="4" type="stmt"/>
-      <line num="78" count="4" type="stmt"/>
-      <line num="80" count="4" type="cond" truecount="1" falsecount="1"/>
-      <line num="81" count="4" type="stmt"/>
-      <line num="84" count="0" type="stmt"/>
-      <line num="87" count="1" type="stmt"/>
-      <line num="89" count="1" type="stmt"/>
-      <line num="95" count="0" type="stmt"/>
-      <line num="96" count="0" type="stmt"/>
-      <line num="97" count="0" type="stmt"/>
-      <line num="100" count="1" type="cond" truecount="1" falsecount="1"/>
-      <line num="101" count="0" type="stmt"/>
-    </file>
-    <file name="parsers.js" path="/Users/diego/Desktop/codica/frontend-project-103/parsers.js">
-      <metrics statements="8" coveredstatements="7" conditionals="6" coveredconditionals="5" methods="1" coveredmethods="1"/>
-      <line num="6" count="1" type="stmt"/>
-      <line num="7" count="8" type="stmt"/>
-      <line num="8" count="8" type="stmt"/>
-      <line num="10" count="8" type="cond" truecount="4" falsecount="0"/>
-      <line num="11" count="4" type="stmt"/>
-      <line num="12" count="4" type="cond" truecount="1" falsecount="1"/>
-      <line num="13" count="4" type="stmt"/>
-      <line num="16" count="0" type="stmt"/>
-    </file>
+<coverage generated="1734495899704" clover="3.2.0">
+  <project timestamp="1734495899704" name="All files">
+    <metrics statements="100" coveredstatements="82" conditionals="66" coveredconditionals="54" methods="19" coveredmethods="17" elements="185" coveredelements="153" complexity="0" loc="100" ncloc="100" packages="2" files="7" classes="7"/>
+    <package name="frontend-project-103">
+      <metrics statements="53" coveredstatements="40" conditionals="31" coveredconditionals="24" methods="5" coveredmethods="4"/>
+      <file name="diffBuilder.js" path="/Users/diego/Desktop/codica/frontend-project-103/diffBuilder.js">
+        <metrics statements="22" coveredstatements="20" conditionals="16" coveredconditionals="14" methods="2" coveredmethods="2"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="10" count="28" type="cond" truecount="3" falsecount="1"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="14" count="28" type="stmt"/>
+        <line num="16" count="28" type="cond" truecount="1" falsecount="1"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="20" count="28" type="stmt"/>
+        <line num="21" count="103" type="cond" truecount="2" falsecount="0"/>
+        <line num="22" count="30" type="stmt"/>
+        <line num="24" count="73" type="cond" truecount="2" falsecount="0"/>
+        <line num="25" count="14" type="stmt"/>
+        <line num="28" count="59" type="stmt"/>
+        <line num="29" count="59" type="stmt"/>
+        <line num="31" count="59" type="cond" truecount="4" falsecount="0"/>
+        <line num="32" count="20" type="stmt"/>
+        <line num="39" count="39" type="cond" truecount="2" falsecount="0"/>
+        <line num="40" count="22" type="stmt"/>
+        <line num="48" count="17" type="stmt"/>
+      </file>
+      <file name="gendiff.mjs" path="/Users/diego/Desktop/codica/frontend-project-103/gendiff.mjs">
+        <metrics statements="19" coveredstatements="10" conditionals="5" coveredconditionals="3" methods="2" coveredmethods="1"/>
+        <line num="12" count="8" type="stmt"/>
+        <line num="13" count="8" type="stmt"/>
+        <line num="14" count="7" type="stmt"/>
+        <line num="17" count="7" type="stmt"/>
+        <line num="23" count="7" type="cond" truecount="1" falsecount="1"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="27" count="7" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="56" count="0" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="62" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="63" count="0" type="stmt"/>
+      </file>
+      <file name="parsers.js" path="/Users/diego/Desktop/codica/frontend-project-103/parsers.js">
+        <metrics statements="12" coveredstatements="10" conditionals="10" coveredconditionals="7" methods="1" coveredmethods="1"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="15" type="stmt"/>
+        <line num="8" count="15" type="stmt"/>
+        <line num="10" count="15" type="cond" truecount="1" falsecount="1"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="14" count="15" type="cond" truecount="4" falsecount="0"/>
+        <line num="15" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="16" count="11" type="cond" truecount="1" falsecount="1"/>
+        <line num="17" count="11" type="stmt"/>
+        <line num="18" count="11" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="frontend-project-103.formatters">
+      <metrics statements="47" coveredstatements="42" conditionals="35" coveredconditionals="30" methods="14" coveredmethods="13"/>
+      <file name="index.js" path="/Users/diego/Desktop/codica/frontend-project-103/formatters/index.js">
+        <metrics statements="6" coveredstatements="5" conditionals="4" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="7" type="cond" truecount="3" falsecount="1"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+      </file>
+      <file name="json.js" path="/Users/diego/Desktop/codica/frontend-project-103/formatters/json.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+      <file name="plain.js" path="/Users/diego/Desktop/codica/frontend-project-103/formatters/plain.js">
+        <metrics statements="20" coveredstatements="18" conditionals="17" coveredconditionals="15" methods="3" coveredmethods="3"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="13" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="8" count="10" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="7" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="15" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="16" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="18" count="5" type="cond" truecount="1" falsecount="1"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="24" count="18" type="cond" truecount="2" falsecount="0"/>
+        <line num="26" count="18" type="cond" truecount="5" falsecount="1"/>
+        <line num="28" count="5" type="stmt"/>
+        <line num="30" count="2" type="stmt"/>
+        <line num="32" count="4" type="stmt"/>
+        <line num="34" count="4" type="stmt"/>
+        <line num="36" count="3" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="43" count="5" type="stmt"/>
+      </file>
+      <file name="stylish.js" path="/Users/diego/Desktop/codica/frontend-project-103/formatters/stylish.js">
+        <metrics statements="20" coveredstatements="18" conditionals="14" coveredconditionals="12" methods="9" coveredmethods="8"/>
+        <line num="4" count="59" type="stmt"/>
+        <line num="5" count="8" type="stmt"/>
+        <line num="7" count="5" type="stmt"/>
+        <line num="8" count="49" type="cond" truecount="5" falsecount="2"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="12" count="28" type="stmt"/>
+        <line num="14" count="15" type="stmt"/>
+        <line num="16" count="8" type="stmt"/>
+        <line num="18" count="8" type="stmt"/>
+        <line num="20" count="10" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="29" count="21" type="stmt"/>
+        <line num="33" count="69" type="cond" truecount="2" falsecount="0"/>
+        <line num="34" count="67" type="cond" truecount="2" falsecount="0"/>
+        <line num="35" count="14" type="stmt"/>
+        <line num="36" count="14" type="stmt"/>
+        <line num="37" count="14" type="stmt"/>
+        <line num="38" count="18" type="stmt"/>
+        <line num="40" count="14" type="stmt"/>
+        <line num="42" count="53" type="cond" truecount="2" falsecount="0"/>
+      </file>
+    </package>
   </project>
 </coverage>

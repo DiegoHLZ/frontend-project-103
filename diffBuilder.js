@@ -1,33 +1,52 @@
-// diffBuilder.js
-import _ from 'lodash';
+import _ from 'lodash'; // Importa lodash para utilizar funciones utilitarias
 
-const buildDiff = (obj1, obj2) => {
-  const allKeys = _.union(Object.keys(obj1), Object.keys(obj2)).sort();
+const ADD_VALUE = 'added';
+const REMOVED_VALUE = 'removed';
+const NESTED_VALUE = 'nested';
+const CHANGED_VALUE = 'changed';
+const UNCHANGED_VALUE = 'unchanged';
 
-  const diff = allKeys.map((key) => {
-    if (!_.has(obj1, key)) {
-      return { key, type: 'added', value: obj2[key] };
+function buildDiff(dataFile1, dataFile2) {
+  if (!dataFile1 || !dataFile2) {
+    throw new Error('Invalid input: One or both files are empty or corrupted.');
+  }
+
+  const keys = _.sortBy(_.union(Object.keys(dataFile1), Object.keys(dataFile2)));
+
+  if (keys.length === 0) {
+    return []; // Devuelve una lista vacía si no hay claves
+  }
+
+  return keys.map((key) => {
+    if (!(key in dataFile1)) {
+      return { key, type: ADD_VALUE, value: dataFile2[key] };
+    }
+    if (!(key in dataFile2)) {
+      return { key, type: REMOVED_VALUE, value: dataFile1[key] };
     }
 
-    if (!_.has(obj2, key)) {
-      return { key, type: 'removed', value: obj1[key] };
+    const valueInFile1 = dataFile1[key];
+    const valueInFile2 = dataFile2[key];
+
+    if (_.isPlainObject(valueInFile1) && _.isPlainObject(valueInFile2)) {
+      return {
+        key,
+        type: NESTED_VALUE,
+        children: buildDiff(valueInFile1, valueInFile2),
+      };
     }
 
-    const value1 = obj1[key];
-    const value2 = obj2[key];
-
-    if (_.isObject(value1) && _.isObject(value2)) {
-      return { key, type: 'nested', children: buildDiff(value1, value2) };
+    if (!_.isEqual(valueInFile1, valueInFile2)) {
+      return {
+        key,
+        type: CHANGED_VALUE,
+        oldValue: valueInFile1,
+        newValue: valueInFile2,
+      };
     }
 
-    if (value1 !== value2) {
-      return { key, type: 'changed', oldValue: value1, newValue: value2 };
-    }
-
-    return { key, type: 'unchanged', value: value1 };
+    return { key, type: UNCHANGED_VALUE, value: valueInFile1 };
   });
-
-  return diff;
-};
+}
 
 export default buildDiff;
