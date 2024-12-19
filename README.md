@@ -1,6 +1,7 @@
 ### Hexlet tests and linter status
 
 [![Actions Status](https://github.com/DiegoHLZ/frontend-project-103/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/DiegoHLZ/frontend-project-103/actions)
+[![Maintainability](https://api.codeclimate.com/v1/badges/7f6ffca4a0f396f7008d/maintainability)](https://codeclimate.com/github/DiegoHLZ/frontend-project-103/maintainability)
 
 # Gendiff
 
