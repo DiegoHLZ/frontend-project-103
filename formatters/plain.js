@@ -1,17 +1,15 @@
 import _ from 'lodash';
 
-// Función auxiliar para formatear valores
 const formatValue = (value) => {
   if (_.isPlainObject(value)) {
     return '[complex value]';
   }
   if (_.isString(value)) {
-    return `'${value}'`;
+    return value;
   }
-  return value;
+  return String(value);
 };
 
-// Función principal para formatear el diff en formato plano
 const formatPlain = (diff, parentPath = '') => {
   const nodes = diff.type === 'root' ? diff.children : diff;
 
