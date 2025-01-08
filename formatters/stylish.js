@@ -2,6 +2,7 @@ import _ from 'lodash';
 
 function stringify(value, depth) {
   if (value === null) return 'null';
+  if (value === '') return `''`;
   if (_.isPlainObject(value)) {
     const indent = ' '.repeat(depth * 4);
     const closingIndent = ' '.repeat((depth - 1) * 4);

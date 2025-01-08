@@ -5,10 +5,13 @@ const formatValue = (value) => {
     return '[complex value]';
   }
   if (_.isString(value)) {
-    return value;
+    return `'${value}'`;
   }
   if (value === null) {
     return 'null';
+  }
+  if (value === '') {
+    return `''`;
   }
   return String(value);
 };
