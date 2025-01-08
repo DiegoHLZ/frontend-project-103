@@ -39,5 +39,8 @@ export default function formatStylish(diff, depth = 0) {
       );
       return `{\n${lines.join('\n')}\n${closingIndent}}`;
     }
-    return typeof value === 'string' ? `"${value}"` : value;
+    if (typeof value === 'string') {
+      return value;
+    }
+    return String(value);
   }
