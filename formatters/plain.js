@@ -7,6 +7,9 @@ const formatValue = (value) => {
   if (_.isString(value)) {
     return value;
   }
+  if (value === null) {
+    return 'null';
+  }
   return String(value);
 };
 
