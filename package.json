@@ -1,5 +1,5 @@
 {
-  "name": "@codica/code",
+  "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "CLI tool to compare configuration files and show differences",
   "main": "gendiff.mjs",
