@@ -11,7 +11,10 @@ const formatValue = (value) => {
     return 'null';
   }
   if (value === '') {
-    return `''`;
+    return "''";
+  }
+  if (value === false) {
+    return 'false';
   }
   return String(value);
 };

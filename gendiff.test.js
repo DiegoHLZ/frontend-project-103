@@ -109,10 +109,11 @@ test('Comparación de archivos YAML planos', () => {
 test('Comparación de archivos JSON con estructura anidada', () => {
   const file1Path = path.resolve('__fixtures__/file1_nest.json');
   const file2Path = path.resolve('__fixtures__/file2_nest.json');
+  const expectedResult = readFileSync(path.resolve('__fixtures__/stylish-result.txt'), 'utf-8').trim();
 
   const result = genDiff(file1Path, file2Path);
   console.log(result);
-  expect(result.trim()).toEqual(nestedExpectedOutput.trim());
+  expect(result.trim()).toEqual(expectedResult);
 });
 
 test('Comparación de archivos YAML con estructura anidada', () => {
