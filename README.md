@@ -44,3 +44,4 @@ node gendiff.mjs __fixtures__/file1.yml __fixtures__/file2.yml
 Mira el siguiente video para ver cómo funciona `gendiff` en acción:
 
 [![asciinema](https://asciinema.org/a/pELEEf9xQeFLgTrDqub0mlc6g.png)](https://asciinema.org/a/pELEEf9xQeFLgTrDqub0mlc6g)
+
